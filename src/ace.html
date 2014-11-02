@@ -1,0 +1,8 @@
+<div class="form-group" ng-class="{'has-error': hasError()}">
+  <label class="control-label" ng-show="showTitle()">{{form.title}}</label>
+  <section>
+  <div ui-ace="form.aceOptions" ng-model-option="form.ngModelOptions" calss="form-control" sf-changed="form" schema-validate="form" style="form.style">
+  </divv>
+  </section>
+  <span class="help-block">{{ (hasError() && errorMessage(schemaError())) || form.description}}</span>
+</div>
